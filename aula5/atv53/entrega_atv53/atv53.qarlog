@@ -1,0 +1,27 @@
+Quartus Prime Archive log --	/home/brnoschsaloli/Documents/descomp/atv53/atv53.qarlog
+
+Archive:	/home/brnoschsaloli/Documents/descomp/atv53/atv53.qar
+Date:		Tue Sep 17 16:34:15 2024
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/brnoschsaloli/Documents/descomp/atv53/FlipFlop.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/LogicaDesvio.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/ULASomaSub.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/Waveform.vwf
+/home/brnoschsaloli/Documents/descomp/atv53/atv53.qpf
+/home/brnoschsaloli/Documents/descomp/atv53/atv53.qsf
+/home/brnoschsaloli/Documents/descomp/atv53/atv53.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/decoderInstru.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/edgeDetector.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/memoriaRAM.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/memoriaROM.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/muxGenerico2x1.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/muxGenerico4x1.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/registradorGenerico.vhd
+/home/brnoschsaloli/Documents/descomp/atv53/somaConstante.vhd
+/home/brnoschsaloli/intelFPGA_lite/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 16 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
