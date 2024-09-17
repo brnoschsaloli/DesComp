@@ -1,0 +1,23 @@
+Quartus Prime Archive log --	/home/brnoschsaloli/Documents/descomp/atv4/atv4.qarlog
+
+Archive:	/home/brnoschsaloli/Documents/descomp/atv4/atv4.qar
+Date:		Tue Sep 10 17:25:26 2024
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/brnoschsaloli/Documents/descomp/atv4/ULASomaSub.vhd
+/home/brnoschsaloli/Documents/descomp/atv4/atv4.qpf
+/home/brnoschsaloli/Documents/descomp/atv4/atv4.qsf
+/home/brnoschsaloli/Documents/descomp/atv4/atv4.vhd
+/home/brnoschsaloli/Documents/descomp/atv4/decoderInstru.vhd
+/home/brnoschsaloli/Documents/descomp/atv4/edgeDetector.vhd
+/home/brnoschsaloli/Documents/descomp/atv4/memoriaRAM.vhd
+/home/brnoschsaloli/Documents/descomp/atv4/memoriaROM.vhd
+/home/brnoschsaloli/Documents/descomp/atv4/muxGenerico2x1.vhd
+/home/brnoschsaloli/Documents/descomp/atv4/registradorGenerico.vhd
+/home/brnoschsaloli/Documents/descomp/atv4/somaConstante.vhd
+/home/brnoschsaloli/intelFPGA_lite/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 12 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

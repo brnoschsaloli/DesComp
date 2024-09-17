@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/brnoschsaloli/Documents/descomp/atv22/simulation/qsim
+Eatv22
+Z1 w1725045524
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+!i122 0
+R0
+Z11 8atv22.vho
+Z12 Fatv22.vho
+l0
+L39 1
+VY3iHWC[<jlJ?<>V2nbiS01
+!s100 <R^hP6Y_4J@[I;od9I=>a2
+Z13 OV;C;2020.1;71
+32
+Z14 !s110 1725045525
+!i10b 1
+Z15 !s108 1725045525.000000
+Z16 !s90 -work|work|atv22.vho|
+Z17 !s107 atv22.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 5 atv22 0 22 Y3iHWC[<jlJ?<>V2nbiS01
+!i122 0
+l141
+L80 782
+VBfBm[>TFXnl@35og?9IXK3
+!s100 80S8ojKlU@d6k0XC?8[=F1
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Eatv22_vhd_vec_tst
+R1
+R8
+R9
+!i122 1
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L32 1
+VL=zU9Cz3Z4=POZ@z3e:Sc1
+!s100 k>^6?DoXj;C5==OVA<lnY3
+R13
+32
+R14
+!i10b 1
+R15
+Z22 !s90 -work|work|Waveform.vwf.vht|
+!s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Aatv22_arch
+R8
+R9
+DEx4 work 17 atv22_vhd_vec_tst 0 22 L=zU9Cz3Z4=POZ@z3e:Sc1
+!i122 1
+l51
+L34 137
+VM2SVR_c2<=HXigam18[QC1
+!s100 ]HmVC?>_f0^TYAo_1IM@H3
+R13
+32
+R14
+!i10b 1
+R15
+R22
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19

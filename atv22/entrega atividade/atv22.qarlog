@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	/home/brnoschsaloli/Documents/descomp/atv22/atv22.qarlog
+
+Archive:	/home/brnoschsaloli/Documents/descomp/atv22/atv22.qar
+Date:		Tue Sep  3 09:58:26 2024
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/brnoschsaloli/Documents/descomp/atv22/ULASomaSub.vhd
+/home/brnoschsaloli/Documents/descomp/atv22/Waveform.vwf
+/home/brnoschsaloli/Documents/descomp/atv22/atv22.qpf
+/home/brnoschsaloli/Documents/descomp/atv22/atv22.qsf
+/home/brnoschsaloli/Documents/descomp/atv22/atv22.vhd
+/home/brnoschsaloli/Documents/descomp/atv22/edgeDetector.vhd
+/home/brnoschsaloli/Documents/descomp/atv22/memoriaROM.vhd
+/home/brnoschsaloli/Documents/descomp/atv22/muxGenerico2x1.vhd
+/home/brnoschsaloli/Documents/descomp/atv22/registradorGenerico.vhd
+/home/brnoschsaloli/Documents/descomp/atv22/somaConstante.vhd
+/home/brnoschsaloli/intelFPGA_lite/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
