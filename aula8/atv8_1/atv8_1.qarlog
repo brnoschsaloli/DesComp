@@ -1,0 +1,31 @@
+Quartus Prime Archive log --	/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/atv8_1.qarlog
+
+Archive:	/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/atv8_1.qar
+Date:		Fri Oct 11 17:15:26 2024
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/CPU.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/FlipFlop.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/LogicaDesvio.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/ULASomaSub.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/atv8_1.qpf
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/atv8_1.qsf
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/atv8_1.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/buffer_3_state.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/buffer_3_state_8portas.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/conversorHex7Seg.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/decoder3x8.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/decoderInstru.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/edgeDetector.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/memoriaRAM.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/memoriaROM.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/muxGenerico2x1.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/muxGenerico4x1.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/registradorGenerico.vhd
+/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/somaConstante.vhd
+/home/brnoschsaloli/intelFPGA_lite/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 20 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

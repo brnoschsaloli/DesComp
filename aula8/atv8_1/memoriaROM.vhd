@@ -28,25 +28,34 @@ architecture assincrona of memoriaROM is
   constant CEQ  : std_logic_vector(3 downto 0) := "1000";
   constant JSR  : std_logic_vector(3 downto 0) := "1001";
   constant RET  : std_logic_vector(3 downto 0) := "1010";
-  
+  constant ANDi : std_logic_vector(3 downto 0) := "1011";
+
 
   function initMemory
         return blocoMemoria is variable tmp : blocoMemoria := (others => (others => '0'));
   begin
       -- Palavra de Controle = SelMUX, Habilita_A, Reset_A, Operacao_ULA
       -- Inicializa os endereços:
-        tmp(0)  := LDI & STD_LOGIC_VECTOR(to_unsigned(1, 9));
+        tmp(0)  := LDI & STD_LOGIC_VECTOR(to_unsigned(0, 9));
         tmp(1)  := STA & STD_LOGIC_VECTOR(to_unsigned(0, 9));
-        tmp(2)  := SOMA & STD_LOGIC_VECTOR(to_unsigned(0, 9));
-        tmp(3)  := STA & STD_LOGIC_VECTOR(to_unsigned(1, 9));
-        tmp(4)  := LDA & STD_LOGIC_VECTOR(to_unsigned(0, 9));
-        tmp(5)  := STA & STD_LOGIC_VECTOR(to_unsigned(257, 9));
-        tmp(6)  := STA & STD_LOGIC_VECTOR(to_unsigned(258, 9));
-        tmp(7)  := LDI & STD_LOGIC_VECTOR(to_unsigned(85, 9));
-        tmp(8)  := STA & STD_LOGIC_VECTOR(to_unsigned(256, 9));
-        tmp(9)  := LDI & STD_LOGIC_VECTOR(to_unsigned(170, 9));
-        tmp(10)  := STA & STD_LOGIC_VECTOR(to_unsigned(256, 9));
-        tmp(11)  := JMP & STD_LOGIC_VECTOR(to_unsigned(11, 9));
+        tmp(2)  := STA & STD_LOGIC_VECTOR(to_unsigned(2, 9));
+        tmp(3)  := LDI & STD_LOGIC_VECTOR(to_unsigned(1, 9));
+        tmp(4)  := STA & STD_LOGIC_VECTOR(to_unsigned(1, 9));
+        tmp(5)  := NOP & STD_LOGIC_VECTOR(to_unsigned(0, 9));
+        tmp(6)  := LDA & STD_LOGIC_VECTOR(to_unsigned(352, 9));
+        --tmp(7)  := STA & STD_LOGIC_VECTOR(to_unsigned(288, 9));
+        tmp(8)  := CEQ & STD_LOGIC_VECTOR(to_unsigned(0, 9));
+        tmp(9)  := JEQ & STD_LOGIC_VECTOR(to_unsigned(11, 9));
+        tmp(10)  := JSR & STD_LOGIC_VECTOR(to_unsigned(32, 9));
+        tmp(11)  := NOP & STD_LOGIC_VECTOR(to_unsigned(0, 9));
+		  tmp(12)  := JMP & STD_LOGIC_VECTOR(to_unsigned(5, 9));
+		  tmp(32)  := STA & STD_LOGIC_VECTOR(to_unsigned(511, 9));
+		  tmp(33)  := LDA & STD_LOGIC_VECTOR(to_unsigned(2, 9));
+		  tmp(34)  := SOMA & STD_LOGIC_VECTOR(to_unsigned(1, 9));
+		  tmp(35)  := STA & STD_LOGIC_VECTOR(to_unsigned(2, 9));
+		  tmp(36)  := STA & STD_LOGIC_VECTOR(to_unsigned(258, 9));
+		  tmp(37)  := STA & STD_LOGIC_VECTOR(to_unsigned(293, 9));
+		  tmp(38)  := RET & STD_LOGIC_VECTOR(to_unsigned(0, 9));
 		  return tmp;
     end initMemory;
 

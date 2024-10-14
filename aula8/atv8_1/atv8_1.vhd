@@ -4,8 +4,7 @@ use ieee.std_logic_1164.all;
 entity atv8_1 is
   -- Total de bits das entradas e saidas
   generic ( larguraDados : natural := 13;
-        larguraEnderecos : natural := 9;
-        simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
+        larguraEnderecos : natural := 9
   );
   port   (
     CLOCK_50 : in std_logic;
@@ -17,11 +16,8 @@ entity atv8_1 is
     HEX3 : out std_logic_vector (6 downto 0);
     HEX4 : out std_logic_vector (6 downto 0);
     HEX5 : out std_logic_vector (6 downto 0);
-	 KEY0 : in std_logic;
-	 KEY1 : in std_logic;
-	 KEY2 : in std_logic;
-	 KEY3 : in std_logic;
-	 FPGA_RESET : in std_logic
+	 KEY : in std_logic_vector (3 downto 0);
+	 FPGA_RESET_N : in std_logic
   );
 end entity;
 
@@ -36,7 +32,6 @@ architecture arquitetura of atv8_1 is
   signal Instruction_IN : std_logic_vector (12 downto 0);
   signal Saida_Decoder_Enderecos : std_logic_vector (7 downto 0);
   signal Saida_Decoder_Blocos : std_logic_vector (7 downto 0);
-  signal CLK : std_logic;
   signal Hab_LEDR : std_logic;
   signal Hab_LED8 : std_logic;
   signal Hab_LED9 : std_logic;
@@ -60,18 +55,15 @@ architecture arquitetura of atv8_1 is
   signal Hab_KEY2 : std_logic;
   signal Hab_KEY3 : std_logic;
   signal Hab_FPGA_RESET : std_logic;
+  signal auxBt0 : std_logic;
+  signal KEY0 : std_logic;
+  signal limpaLeitura : std_logic;
+  
+  alias CLK : std_logic is CLOCK_50;
 
 begin
 
--- Instanciando os componentes:
 
--- Para simular, fica mais simples tirar o edgeDetector
-gravar:  if simulacao generate
-CLK <= SW(0);
-else generate	
-detectorSub0: work.edgeDetector(bordaSubida)
-        port map (clk => CLOCK_50, entrada => (not SW(0)), saida => CLK);
-end generate;
 
 CPU : entity work.CPU
 			 port map (CLK => CLK, Reset => '0', Instruction_IN => Instruction_IN, Data_IN => Data_IN, ROM_Address => ROM_Address, WR => WR, RD => RD, Data_Address => Data_Address, Data_OUT => Data_OUT);
@@ -157,20 +149,26 @@ TSSW8 :  entity work.buffer_3_state
 TSSW9 :  entity work.buffer_3_state
         port map(entrada => SW(9), habilita =>  Hab_SW9, saida => Data_IN(0));
 		  
+
+detectorSub0: work.edgeDetector(bordaSubida) port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => auxBt0);
+
+FFKEY0 : entity work.FlipFlop   generic map (larguraDados => 1)											 
+          port map (DIN => '1', DOUT => KEY0, ENABLE => '1', CLK => auxBt0, RST => limpaLeitura);	
+		  
 TSKEY0 :  entity work.buffer_3_state
         port map(entrada => KEY0, habilita =>  Hab_KEY0, saida => Data_IN(0));		  
 		  
 TSKEY1 :  entity work.buffer_3_state
-        port map(entrada => KEY1, habilita =>  Hab_KEY1, saida => Data_IN(0));
+        port map(entrada => KEY(1), habilita =>  Hab_KEY1, saida => Data_IN(0));
 
 TSKEY2 :  entity work.buffer_3_state
-        port map(entrada => KEY2, habilita =>  Hab_KEY2, saida => Data_IN(0));
+        port map(entrada => KEY(2), habilita =>  Hab_KEY2, saida => Data_IN(0));
 
 TSKEY3 :  entity work.buffer_3_state
-        port map(entrada => KEY3, habilita =>  Hab_KEY3, saida => Data_IN(0));
+        port map(entrada => KEY(3), habilita =>  Hab_KEY3, saida => Data_IN(0));
 
 TSFPGARESET :  entity work.buffer_3_state
-        port map(entrada => FPGA_RESET, habilita =>  Hab_FPGA_RESET, saida => Data_IN(0));		  
+        port map(entrada => FPGA_RESET_N, habilita =>  Hab_FPGA_RESET, saida => Data_IN(0));		  
 					  
 Hab_LEDR <= WR and Saida_Decoder_Blocos(4) and Saida_Decoder_Enderecos(0) and not(Data_Address(5));
 Hab_LED8 <= WR and Saida_Decoder_Blocos(4) and Saida_Decoder_Enderecos(1) and not(Data_Address(5));		
@@ -191,6 +189,8 @@ Hab_KEY0 <= RD and (Data_Address(5)) and Saida_Decoder_Enderecos(0) and Saida_De
 Hab_KEY1 <= RD and (Data_Address(5)) and Saida_Decoder_Enderecos(1) and Saida_Decoder_Blocos(5);
 Hab_KEY2 <= RD and (Data_Address(5)) and Saida_Decoder_Enderecos(2) and Saida_Decoder_Blocos(5);
 Hab_KEY3 <= RD and (Data_Address(5)) and Saida_Decoder_Enderecos(3) and Saida_Decoder_Blocos(5);
-Hab_FPGA_RESET <= RD and (Data_Address(5)) and Saida_Decoder_Enderecos(4) and Saida_Decoder_Blocos(5);			 
+Hab_FPGA_RESET <= RD and (Data_Address(5)) and Saida_Decoder_Enderecos(4) and Saida_Decoder_Blocos(5);	
+
+limpaLeitura <= Data_Address(0) and Data_Address(1) and Data_Address(2) and Data_Address(3) and Data_Address(4) and Data_Address(5) and Data_Address(6) and Data_Address(7) and Data_Address(8) and WR;		 
 
 end architecture;

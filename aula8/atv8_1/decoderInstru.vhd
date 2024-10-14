@@ -20,6 +20,7 @@ architecture comportamento of decoderInstru is
   constant CEQ  : std_logic_vector(3 downto 0) := "1000";
   constant JSR  : std_logic_vector(3 downto 0) := "1001";
   constant RET  : std_logic_vector(3 downto 0) := "1010";
+  constant ANDi : std_logic_vector(3 downto 0) := "1011";
 
   begin
 saida <= "000000000000" when opcode = NOP else
@@ -33,5 +34,6 @@ saida <= "000000000000" when opcode = NOP else
 			"000000000110" when opcode = CEQ else
 			"100100000000" when opcode = JSR else
 			"001000000000" when opcode = RET else
+			"000001111000" when opcode = ANDi else
 			"000000000000";  -- NOP para os opcodes Indefinidos
 end architecture;
