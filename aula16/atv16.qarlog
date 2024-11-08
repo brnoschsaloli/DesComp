@@ -1,0 +1,31 @@
+Quartus Prime Archive log --	/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/atv16.qarlog
+
+Archive:	/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/atv16.qar
+Date:		Mon Nov  4 14:01:23 2024
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/RAMMIPS.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/ROMMIPS.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/ULAMIPS.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/ULASomaSub.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/Waveform.vwf
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/atv16.qpf
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/atv16.qsf
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/atv16.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/bancoRegistradores.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/edgeDetector.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/estendeSinalGenerico.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/memoriaRAM.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/muxGenerico2x1.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/muxGenerico4x1.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/registradorGenerico.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/somaConstante.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/somadorComShift.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/somadorGenerico.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula16/somadorMIPS.vhd
+/home/brnoschsaloli/intelFPGA_lite/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 20 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

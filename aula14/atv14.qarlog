@@ -1,0 +1,33 @@
+Quartus Prime Archive log --	/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/atv14.qarlog
+
+Archive:	/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/atv14.qar
+Date:		Tue Oct 29 19:12:43 2024
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/RAMMIPS.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/ROMMIPS.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/ULASomaSub.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/Waveform.vwf
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/Waveform1.vwf
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/Waveform2.vwf
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/Waveform3.vwf
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/atv14.qpf
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/atv14.qsf
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/atv14.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/bancoRegistradores.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/decoderFunct.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/decoderInstru.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/edgeDetector.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/estendeSinalGenerico.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/memoriaRAM.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/muxGenerico2x1.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/registradorGenerico.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/somaConstante.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/somadorComShift.vhd
+/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula14/somadorGenerico.vhd
+/home/brnoschsaloli/intelFPGA_lite/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 22 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

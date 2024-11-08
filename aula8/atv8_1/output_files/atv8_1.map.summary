@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Oct 12 16:04:37 2024
+Analysis & Synthesis Status : Successful - Sat Oct 19 16:25:13 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : atv8_1
 Top-level Entity Name : atv8_1
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 63
+Total registers : 44
 Total pins : 68
 Total virtual pins : 0
 Total block memory bits : 0

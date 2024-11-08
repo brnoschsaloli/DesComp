@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("/home/brnoschsaloli/Documents/descomp/aula8/atv8_1/output_files/") File("atv8_1.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("/home/brnoschsaloli/Documents/DesComp/aulas/descomp/aula8/atv8_1/output_files/") File("atv8_1.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

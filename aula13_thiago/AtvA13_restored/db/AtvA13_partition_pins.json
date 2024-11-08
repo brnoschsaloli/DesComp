@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Simulacao_saida_ula[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Simulacao_saida_ula[31]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

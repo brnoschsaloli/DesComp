@@ -1,4 +1,4 @@
-library IEEE;
+	library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 
@@ -36,26 +36,16 @@ architecture assincrona of memoriaROM is
   begin
       -- Palavra de Controle = SelMUX, Habilita_A, Reset_A, Operacao_ULA
       -- Inicializa os endereços:
-        tmp(0)  := LDI & STD_LOGIC_VECTOR(to_unsigned(0, 9));
-        tmp(1)  := STA & STD_LOGIC_VECTOR(to_unsigned(0, 9));
-        tmp(2)  := STA & STD_LOGIC_VECTOR(to_unsigned(2, 9));
-        tmp(3)  := LDI & STD_LOGIC_VECTOR(to_unsigned(1, 9));
-        tmp(4)  := STA & STD_LOGIC_VECTOR(to_unsigned(1, 9));
-        tmp(5)  := NOP & STD_LOGIC_VECTOR(to_unsigned(0, 9));
-        tmp(6)  := LDA & STD_LOGIC_VECTOR(to_unsigned(352, 9));
-        --tmp(7)  := STA & STD_LOGIC_VECTOR(to_unsigned(288, 9));
-        tmp(8)  := CEQ & STD_LOGIC_VECTOR(to_unsigned(0, 9));
-        tmp(9)  := JEQ & STD_LOGIC_VECTOR(to_unsigned(11, 9));
-        tmp(10)  := JSR & STD_LOGIC_VECTOR(to_unsigned(32, 9));
-        tmp(11)  := NOP & STD_LOGIC_VECTOR(to_unsigned(0, 9));
-		  tmp(12)  := JMP & STD_LOGIC_VECTOR(to_unsigned(5, 9));
-		  tmp(32)  := STA & STD_LOGIC_VECTOR(to_unsigned(511, 9));
-		  tmp(33)  := LDA & STD_LOGIC_VECTOR(to_unsigned(2, 9));
-		  tmp(34)  := SOMA & STD_LOGIC_VECTOR(to_unsigned(1, 9));
-		  tmp(35)  := STA & STD_LOGIC_VECTOR(to_unsigned(2, 9));
-		  tmp(36)  := STA & STD_LOGIC_VECTOR(to_unsigned(258, 9));
-		  tmp(37)  := STA & STD_LOGIC_VECTOR(to_unsigned(293, 9));
-		  tmp(38)  := RET & STD_LOGIC_VECTOR(to_unsigned(0, 9));
+        tmp(0)  := STA & STD_LOGIC_VECTOR(to_unsigned(511, 9));
+        tmp(1)  := LDI & STD_LOGIC_VECTOR(to_unsigned(1, 9));
+        tmp(2)  := STA & STD_LOGIC_VECTOR(to_unsigned(1, 9));
+        tmp(3)  := NOP & STD_LOGIC_VECTOR(to_unsigned(0, 9));
+        tmp(4)  := LDA & STD_LOGIC_VECTOR(to_unsigned(352, 9));
+        tmp(5)  := STA & STD_LOGIC_VECTOR(to_unsigned(288, 9));
+        tmp(6)  := ANDi & STD_LOGIC_VECTOR(to_unsigned(1, 9));
+        tmp(7)  := STA & STD_LOGIC_VECTOR(to_unsigned(289, 9));
+        tmp(8)  := NOP & STD_LOGIC_VECTOR(to_unsigned(0, 9));
+        tmp(9)  := JMP & STD_LOGIC_VECTOR(to_unsigned(3, 9));
 		  return tmp;
     end initMemory;
 
